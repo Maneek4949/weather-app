@@ -1,0 +1,86 @@
+body {
+    background: #222;
+    background-image:url("./cloud.jpg");
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
+
+.card {
+    justify-content: center;
+    align-items: center;
+    background: #eaeaea57;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: auto;   
+    margin-top:30px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button:hover{
+    background: beige;
+}
+button {
+    background:rgba(218, 218, 216, 0.596);
+    border-radius: 50%;
+    margin: 0.5em;
+    border: none;
+    height: 46px;
+    width: 46px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    background:rgba(218, 218, 216, 0.596);
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(100%-100px);
+}
+
+.future{
+    background:#eaeaea57;
+    ;
+    padding: 25px;
+    position:fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    bottom:0
+
+    
+}
+.future .weather-forcast{
+    display: flex;
+}
+.weather-items{
+    margin-left:20px;
+    margin-right: 20px;
+    border-radius:10px;
+    padding:1em;
+    border: 1px solid beige;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.weather-items:hover{
+    background: rgba(218, 218, 216, 0.596);
+}
+.today{
+    margin:10px;
+    border-radius:10px;
+    background:rgba(218, 218, 216, 0.596);
+    height: 150px;
+    width: 120px;
+    padding:1em;
+}
