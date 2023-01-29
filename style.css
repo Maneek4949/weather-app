@@ -1,10 +1,13 @@
 body {
     background: #222;
     background-image:url("./cloud.jpg");
+    background-repeat: no-repeat;
     font-family: 'Karla', sans-serif;
     font-weight: bold;
 }
-
+.header{
+    margin-bottom: 20px;
+}
 .card {
     justify-content: center;
     align-items: center;
@@ -48,25 +51,27 @@ input.search-bar {
     width: calc(100%-100px);
 }
 
-.future{
+#future{
     background:#eaeaea57;
-    ;
     padding: 25px;
     position:fixed;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
-    bottom:0
+    bottom:0;
 
     
 }
-.future .weather-forcast{
+#future .weather-forcast{
     display: flex;
 }
+
 .weather-items{
+    width: 140px;
     margin-left:20px;
     margin-right: 20px;
+    margin-bottom: 20px;
     border-radius:10px;
     padding:1em;
     border: 1px solid beige;
@@ -80,7 +85,24 @@ input.search-bar {
     margin:10px;
     border-radius:10px;
     background:rgba(218, 218, 216, 0.596);
-    height: 150px;
-    width: 120px;
     padding:1em;
+}
+
+.today .day{
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: rgb(0, 0, 0);
+    text-align: center;
+}
+.weather-items .day{
+    padding: 5px 15px;
+    border: #222;
+}
+@media only screen and (max-width:730px) {
+    #future{
+        justify-content:start;
+        align-items:none;
+        overflow-y:scroll;
+    }
+    
 }
